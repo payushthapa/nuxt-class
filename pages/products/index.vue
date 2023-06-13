@@ -3,10 +3,12 @@
     <div class="py-5">
         <div class="container">
             <div class="row g-3">
-                <div class="col-md-3" v-for="(product,index) in 30" :key="index">
+                <div class="col-md-4" v-for="(product,index) in 30" :key="index">
                    
                         <div class="card" style="width: 18rem;">
-                            <img src="https://cdn.pixabay.com/photo/2023/05/28/18/46/dog-8024345_640.jpg" class="card-img-top" alt="...">
+                            <div class="image-box">
+                                <img src="https://cdn.pixabay.com/photo/2023/06/07/20/34/ball-8048205__340.jpg" alt="">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -38,7 +40,7 @@ img:hover {
     filter: none;
     transform: scale(2);
 }
-image-{
+.image-box{
     overflow: hidden;
 }
 </style>
