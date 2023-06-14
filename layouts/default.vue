@@ -1,43 +1,40 @@
 <template>
     <div>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <nuxt-link to="/" class="nav-link">Home</nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link to="/About" class="nav-link">About Us</nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link to="/contact" class="nav-link">Contact Us</nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link to="/service" class="nav-link">Service</nuxt-link>
-        </li> 
-        
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-        </header>
-
+        <nuxt-link to="/home">Home</nuxt-link>
+        <nuxt-link to="/about">About Us</nuxt-link>
+        <nuxt-link to="/contact">Contact us</nuxt-link>
+        <nuxt-link to="/services">service</nuxt-link>
         <main>
             <slot></slot>
         </main>
 
         <footer>
-
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+            <img src="https://codeit.com.np/images/1642171339codeIT%20logo.png" alt="" height="60px">
+            <p>9862130505, 025-525163</p>
+            <p>info@codeit.com.np</p>
+            <p>Prithvi Path,Dharan</p>
+            </div>
+            <div class="col-md-3">
+              <h1>Quick link</h1>
+              <p>About Us</p>
+             <p>Contact Us</p>
+             <p>Gallery</p> 
+             <p>Blog</p>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section>
+        <div class="container">
+          <div class="row">
+            
+          </div>
+        </div>
+      </section>
         </footer>
     </div>
 </template>
