@@ -1,9 +1,41 @@
 <template>
     <div>
-        <nuxt-link to="/home">Home</nuxt-link>
-        <nuxt-link to="/about">About Us</nuxt-link>
-        <nuxt-link to="/contact">Contact us</nuxt-link>
-        <nuxt-link to="/services">service</nuxt-link>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <nuxt-link to="/" class="nav-link">Home</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/about" class="nav-link">About us</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/service" class="nav-link">Services</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/contact" class="nav-link">Contact us</nuxt-link>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+       
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+        </header>
+
+
         <main>
             <slot></slot>
         </main>
@@ -25,12 +57,21 @@
              <p>Gallery</p> 
              <p>Blog</p>
             </div>
-          </div>
-        </div>
-      </section> 
-      <section>
-        <div class="container">
-          <div class="row">
+            <div class="col-md-3">
+              <h1>Bank Account Detail</h1>
+              <p><b>Bank:</b>Nepal Bank Limited</p>
+              <p><b>Account Name</b>CODE IT</p>
+              <P><b>AC/No:</b>01600106885462000001</P>
+              <p><b>Branch:</b>Dharan</p>
+              <img src="https://codeit.com.np/asset/img/fonepay-bg.png" alt="" height="30px">
+              <img src="https://codeit.com.np/asset/img/codeit-qr.jpg" alt="" height="60px">
+            </div>
+           <div class="col-md-3">
+            <h1>Download App</h1>
+            <p>Download Our Mobile App</p>
+            <img src="https://codeit.com.np/mobile/appstore.png" alt="" height="60px">
+            <img src="https://codeit.com.np/mobile/googleplay.png" alt="" height="60px">
+           </div>
             
           </div>
         </div>
