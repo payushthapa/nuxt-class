@@ -22,6 +22,9 @@
           <nuxt-link to="/contact" class="nav-link">Contact us</nuxt-link>
         </li>
         <li class="nav-item">
+          <nuxt-link to="/products" class="nav-link">Product</nuxt-link>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
        

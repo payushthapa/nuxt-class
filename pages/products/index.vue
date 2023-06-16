@@ -5,17 +5,7 @@
             <div class="row g-3">
                 <div class="col-md-4" v-for="(product,index) in 30" :key="index">
                    
-                        <div class="card" style="width: 18rem;">
-                            <div class="image-box">
-                                <img src="https://cdn.pixabay.com/photo/2023/06/07/20/34/ball-8048205__340.jpg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-
+                       <productCard></productCard>
                     </div>
                 </div>
             </div>
@@ -26,7 +16,8 @@
 
     
 <script setup>
-
+const{data} = await useFetch("https://api.escuelajs.co/api/v1/products")
+console.warn(data)
     </script>
 
     
