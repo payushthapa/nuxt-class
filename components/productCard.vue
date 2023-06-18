@@ -1,20 +1,24 @@
 <template>
-    <div>
-        <div class="card" style="width: 18rem;">
-                            <div class="image-box">
-                                <img src="https://cdn.pixabay.com/photo/2023/06/07/20/34/ball-8048205__340.jpg" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        </div>
+<div>
+    <div class="card" style="width: 18rem;">
+        <div class="image-box">
+            <img :src="product.images[0]" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text">Rs {{ product.price }}</p>
+            <p class="card-text">{{ product.updatedAt }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
 </template>
 
 <script setup>
-
+const props = defineProps({
+    product: {}
+})
 </script>
 
 <style scoped>
@@ -27,7 +31,8 @@ img:hover {
     filter: none;
     transform: scale(2);
 }
-.image-box{
+
+.image-box {
     overflow: hidden;
 }
 </style>

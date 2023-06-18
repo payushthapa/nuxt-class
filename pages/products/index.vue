@@ -3,9 +3,9 @@
     <div class="py-5">
         <div class="container">
             <div class="row g-3">
-                <div class="col-md-4" v-for="(product,index) in 30" :key="index">
+                <div class="col-md-4" v-for="(p,index) in data.data._rawValue" :key="index">
                    
-                       <productCard></productCard>
+                       <productCard :product="p"/>
                     </div>
                 </div>
             </div>
@@ -16,8 +16,8 @@
 
     
 <script setup>
-const{data} = await useFetch("https://api.escuelajs.co/api/v1/products")
-console.warn(data)
+const data = await useFetch("https://api.escuelajs.co/api/v1/products");
+console.warn(data.data._rawValue);
     </script>
 
     
