@@ -22,7 +22,7 @@ const props = defineProps ({
 </script>
 <style scoped>
 img {
-    filter: grayscale();
+    filter: grayscale() blur(1px);
     transition: 1s;
 }
 
